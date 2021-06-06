@@ -2,3 +2,4 @@ yay
 ksuperkey
 texlive
 urxvt
+zathura
