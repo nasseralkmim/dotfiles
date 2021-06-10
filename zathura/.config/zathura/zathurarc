@@ -1,3 +1,4 @@
 set set highlight-active-color "#ff0000"
 set highlight-transparency 0.1
 set guioptions none
+set adjust-open width
