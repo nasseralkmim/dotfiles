@@ -8,3 +8,5 @@ advection
 nonlinearities
 scalability
 geoscience
+autoloading
+Krylov
