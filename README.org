@@ -1,0 +1,11 @@
+* Cloning and Stow
+
+Clone the repository to =~=.
+Then =stow= the files to create symbolic links from current (=.dotfiles=) to parent (=/home/user/=).
+
+The name of the package is the name of the directory where the configurations are.
+
+#+begin_src shell
+cd ~/.dotfiles
+stow <package>
+#+end_src
