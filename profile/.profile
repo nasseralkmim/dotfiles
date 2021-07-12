@@ -29,8 +29,12 @@ fi
 export EDITOR=/usr/bin/emacs
 
 
-# USING windows solution with 
+# USING windows solution with "dual-key-remap"
 # swap capslock to ctrl, better ergonomics
 # setxkbmap -option ctrl:swapcaps
 # # also use it as escape key
 # xcape -e 'Control_L=Escape'
+
+export LIBGL_ALWAYS_INDIRECT=1 #GWSL
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
+export PULSE_SERVER=tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
