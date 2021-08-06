@@ -22,12 +22,6 @@ alias soft='cd /mnt/c/Users/c8441205/OneDrive/Academy/PhD/softwares'
 export GOPATH=${HOME}/go
 export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin
 
-# ALIASES
-# for running edelweissfe
-alias edelweissfe="~/miniconda3/envs/edelweissFE/bin/python /mnt/c/Users/c8441205/OneDrive/Academy/PhD/softwares/EdelweissFE/edelweiss.py"
-# for paraview (note that "''" because of spaces in the path)
-alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-64bit/bin/pvpython.exe'"
-alias e="emacsclient -nw -a ''"
 
 # for vterm
 vterm_printf(){
