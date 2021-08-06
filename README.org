@@ -9,3 +9,5 @@ The name of the package is the name of the directory where the configurations ar
 cd ~/.dotfiles
 stow <package>
 #+end_src
+
+If the file already exists, you need to delete them first.

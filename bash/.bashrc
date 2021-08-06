@@ -15,13 +15,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-alias proj='cd /mnt/c/Users/c8441205/OneDrive/Academy/PhD/projects'
-alias soft='cd /mnt/c/Users/c8441205/OneDrive/Academy/PhD/softwares'
-
 # go language for singularity
 export GOPATH=${HOME}/go
 export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin
-
 
 # for vterm
 vterm_printf(){
@@ -42,3 +38,10 @@ vterm_printf(){
 #\W - current working dir
 #\? - exit status of the command
 export PS1="[\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\W]$ "
+
+# For using tramp
+# the promp needs to be simple
+case "$TERM" in
+	"dumb")
+		PS1="> "
+esac
