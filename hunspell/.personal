@@ -16,3 +16,7 @@ unsymmetric
 datasets
 dataset
 edelweissfe
+diagonalizable
+preconditioners
+multigrid
+subproblems
