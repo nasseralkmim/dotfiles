@@ -59,7 +59,7 @@ alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-
 # emacs
 # -nw no window
 # -a '' if there is no client
-alias e="emacsclient -nw -a ''"
+alias e="emacs -nw"
 
 # better color support
 export TERM=xterm-256color
