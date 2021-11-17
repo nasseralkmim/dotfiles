@@ -17,8 +17,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # go language for singularity
-export GOPATH=${HOME}/go
-export PATH=/usr/local/go/bin:${PATH}:${GOPATH}/bin
+export "GOPATH=${HOME}/go"
+export PATH="/usr/local/go/bin:${PATH}:${GOPATH}/bin"
+alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae"
 
 # for vterm (in emacs)
 vterm_printf(){
@@ -63,3 +64,6 @@ alias e="emacs -nw"
 
 # better color support
 export TERM=xterm-256color
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+export PATH=$JAVA_HOME/jre/bin:$PATH
