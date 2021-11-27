@@ -21,3 +21,8 @@ preconditioners
 multigrid
 subproblems
 discretization
+nonlocal
+wiesnerFlexibleAggregationbasedAlgebraic
+monolithically
+Uzawa
+geotechnical
