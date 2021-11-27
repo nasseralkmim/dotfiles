@@ -51,7 +51,7 @@ esac
 # Aliases
 #
 # for running edelweissfe
-alias edelweissfe="~/miniconda3/envs/edelweissfe/bin/python ~/EdelweissFE/edelweiss.py"
+alias edelweissfe="~/miniconda3/envs/edelweissfe/bin/python ~/EdelweissFE/edelweiss.py .py"
 
 # for paraview (note that "''" because of spaces in the path)
 alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-64bit/bin/pvpython.exe'"
@@ -61,5 +61,8 @@ alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-
 # -a '' if there is no client
 alias e="emacs -nw"
 
-# better color support
+# better color support (-256color)
 export TERM=xterm-256color
+
+# sudo editor
+export SUDO_EDITOR="emacs -nw"
