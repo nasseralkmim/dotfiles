@@ -67,3 +67,6 @@ export TERM=xterm-256color
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 export PATH=$JAVA_HOME/jre/bin:$PATH
+
+# editor for sudo -e
+export SUDO_EDITOR="emacs -nw"
