@@ -19,7 +19,6 @@ unset __conda_setup
 # go language for singularity
 export "GOPATH=${HOME}/go"
 export PATH="/usr/local/go/bin:${PATH}:${GOPATH}/bin"
-alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae"
 
 # for vterm (in emacs)
 vterm_printf(){
@@ -70,3 +69,6 @@ export PATH=$JAVA_HOME/jre/bin:$PATH
 
 # editor for sudo -e
 export SUDO_EDITOR="emacs -nw"
+
+# abaqus with singularity
+alias abaqus="nohup singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae &"
