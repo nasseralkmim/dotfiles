@@ -71,4 +71,4 @@ export PATH=$JAVA_HOME/jre/bin:$PATH
 export SUDO_EDITOR="emacs -nw"
 
 # abaqus with singularity
-alias abaqus="nohup singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae &"
+alias abaqus="nohup singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae & disown"
