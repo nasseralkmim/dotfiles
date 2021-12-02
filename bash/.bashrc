@@ -72,3 +72,7 @@ export SUDO_EDITOR="emacs -nw"
 
 # abaqus with singularity
 alias abaqus="nohup singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae & disown"
+
+alias ls='ls --color=auto'
+
+alias sshrem='ssh nasser@138.232.83.174'
