@@ -75,4 +75,5 @@ alias abaqus="nohup singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_
 
 alias ls='ls --color=auto'
 
-alias sshrem='ssh nasser@138.232.83.174'
+alias sshx='ssh -X 138.232.83.174'
+alias vpnx='sudo openconnect vpn.uibk.ac.at -u c8441205'
