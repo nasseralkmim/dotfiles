@@ -1,5 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
+# add ~/.local/bin to path
+export PATH="${PATH}:/home/nasser/.local/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -73,7 +75,7 @@ export SUDO_EDITOR="emacs -nw"
 # abaqus with singularity
 # &: runs in the background
 # disown: remove from SHELL job control (can close terminal)
-alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae & disown"
+alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae"
 
 alias ls='ls --color=auto'
 
