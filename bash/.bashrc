@@ -73,8 +73,7 @@ export PATH=$JAVA_HOME/jre/bin:$PATH
 export SUDO_EDITOR="emacs -nw"
 
 # abaqus with singularity
-# &: runs in the background
-# disown: remove from SHELL job control (can close terminal)
+# - mesa to disable hardware acceleration
 alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae"
 
 alias ls='ls --color=auto'
