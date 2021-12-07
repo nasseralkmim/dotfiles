@@ -75,7 +75,8 @@ export SUDO_EDITOR="emacs -nw"
 # abaqus with singularity
 # &: runs in the background
 # disown: remove from SHELL job control (can close terminal)
-alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae"
+# - mesa for hardware acceleration
+alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae -mesa"
 
 alias ls='ls --color=auto'
 
