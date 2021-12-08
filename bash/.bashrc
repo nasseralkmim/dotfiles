@@ -79,7 +79,9 @@ export SUDO_EDITOR="emacs -nw"
 alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus cae -mesa"
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
+# for remote work
 alias vpnx='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
 alias fwx='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
 export remote=138.232.83.174
