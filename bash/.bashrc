@@ -76,12 +76,12 @@ export SUDO_EDITOR="emacs -nw"
 # &: runs in the background
 # disown: remove from SHELL jobm control (can close terminal)
 # - mesa for hardware acceleration
-alias abaqus="cd ~/Abaqus/ && singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus"
+alias abaqus="singularity exec ~/Containers/abaqus-2019-centos-7-may-2020_ii.simg abaqus"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # for remote work
-alias vpnx='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
-alias fwx='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
+alias vpnrem='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
+alias fwrem='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
 export remote=138.232.83.174
-alias sshfsrem='sshfs $remote:/home/nasser/Abaqus /home/nasser/Abaqus'
+alias sshfsrem='sshfs -o allow_other,default_permissions $remote:/home/nasser/Abaqus /home/nasser/Abaqus'
