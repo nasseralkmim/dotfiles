@@ -84,4 +84,5 @@ alias grep='grep --color=auto'
 alias vpnrem='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
 alias fwrem='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
 export remote=nasser@138.232.83.174
+export remotebackup=nasser@138.232.83.149
 alias sshfsrem='sshfs -o allow_other $remote:/home/nasser/Abaqus /home/nasser/Abaqus'
