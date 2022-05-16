@@ -88,6 +88,11 @@ export alienware=nasser@138.232.83.149
 export station=nasser@138.232.83.171
 alias sshfsrem='sshfs -o allow_other $remote:/home/nasser/Abaqus /home/nasser/Abaqus'
 
-# backup to spare workstation
+# backup to spare workstation work related
 alias backup="restic -r sftp:$remotebackup:/home/nasser/Backup --verbose backup ~/Experiments"
-alias outrunedelweissfe="outrun $alienware ~/miniconda3/envs/edelweissfe/bin/python ~/.local/src/EdelweissFE/edelweiss.py"
+
+# restic backup to backblaze b2 personal
+export B2_ACCOUNT_ID=004588961603a2a0000000002
+export B2_ACCOUNT_KEY=K004nGE+jHV0GeR9GpWpV8XIHSKyM1A
+export RESTIC_REPOSITORY="b2:thinkpad-t14s:Documents"
+export RESTIC_PASSWORD="230692"
