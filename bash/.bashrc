@@ -93,9 +93,3 @@ export workrepo="sftp:$alienware:/home/nasser/Backup"
 alias workbackup="restic -r $workrepo --verbose backup ~/Experiments"
 
 export homerepo="b2:thinkpad-t14s:Documents"
-
-# restic backup to backblaze b2 personal
-export B2_ACCOUNT_ID=004588961603a2a0000000002
-export B2_ACCOUNT_KEY=K004nGE+jHV0GeR9GpWpV8XIHSKyM1A
-export RESTIC_REPOSITORY=$homerepo
-export RESTIC_PASSWORD="230692"
