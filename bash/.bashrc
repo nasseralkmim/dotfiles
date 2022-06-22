@@ -16,6 +16,10 @@ else
     fi
 fi
 unset __conda_setup
+
+if [ -f "/home/nasser/miniconda3/etc/profile.d/mamba.sh" ]; then
+    . "/home/nasser/miniconda3/etc/profile.d/mamba.sh"
+fi
 # <<< conda initialize <<<
 
 # go language for singularity
@@ -59,9 +63,10 @@ alias edelweissfe="~/miniconda3/envs/edelweissfe/bin/python ~/.local/src/Edelwei
 alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-64bit/bin/pvpython.exe'"
 
 # emacs
-# -nw no window
+# -nw no window, open on current terminal
 # -a '' if there is no client
 alias e="emacs -nw"
+alias ec="emacsclient --no-wait"
 
 # better color support (-256color)
 export TERM=xterm-256color
