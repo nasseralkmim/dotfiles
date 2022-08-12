@@ -88,7 +88,7 @@ alias grep='grep --color=auto'
 # for remote work
 alias vpnrem='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
 alias fwrem='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
-export remote=nasser@138.232.83.174
+export workstation=nasser@138.232.83.174
 export alienware=nasser@138.232.83.149
 export threadripper=nasser@138.232.83.171
 alias sshfsrem='sshfs -o allow_other $remote:/home/nasser/Abaqus /home/nasser/Abaqus'
