@@ -86,7 +86,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 # for remote work
-alias vpnrem='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
+alias uibkvpn='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
 alias fwrem='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
 export workstation=nasser@138.232.83.174
 export alienware=nasser@138.232.83.149
