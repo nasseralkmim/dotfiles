@@ -29,6 +29,7 @@ geotechnical
 Abaqus
 microrotation
 microrotations
+Microrotations
 nonsymmetric
 micropolar
 macrorotations
@@ -49,3 +50,17 @@ discretized
 todo
 microcurvature
 unpulled
+snapback
+multifield
+linearization
+Galerkin
+brezinaAdaptiveSmoothedAggregation
+pdf
+trilinos
+CMake
+toolchain
+Tpetra
+Belos
+Ifpack
+PyTrilinos
+pyhton
