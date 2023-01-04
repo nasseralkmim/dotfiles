@@ -69,7 +69,7 @@ alias e="emacs -nw -fg white -bg black"
 alias ec="emacsclient --no-wait"
 
 # better color support (-256color)
-export TERM=xterm-256color
+export TERM=screen-256color
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 export PATH=$JAVA_HOME/jre/bin:$PATH
