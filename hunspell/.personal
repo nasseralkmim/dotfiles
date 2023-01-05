@@ -93,6 +93,7 @@ Nonblocking
 MPI
 nonblocking
 nonblock
+Amdahl's
 SeaDrive
 Hofstetter
 Neuner
@@ -124,6 +125,8 @@ ae6b9e
 Makefile
 nonsingular
 nonsymmetry
+Numerics
+dereference
 struct
 preprocessor
 hardcode
@@ -134,3 +137,8 @@ deallocation
 deallocate
 deallocated
 Skłodowska
+predeclaring
+subarray
+Scatterv
+subarrays
+profiler
