@@ -3,3 +3,4 @@ Description=Backup experiments
 
 [Service]
 ExecStart=/home/nasser/.restic
+Type=oneshot

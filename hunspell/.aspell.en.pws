@@ -1,3 +1,4 @@
+personal_ws-1.1 en 0
 preconditioner
 Elman
 sparsifying
@@ -121,7 +122,6 @@ paraview
 pvsm
 htp
 rf
-ae6b9e
 Makefile
 nonsingular
 nonsymmetry
@@ -136,7 +136,6 @@ discretizations
 deallocation
 deallocate
 deallocated
-Skłodowska
 predeclaring
 subarray
 Scatterv
