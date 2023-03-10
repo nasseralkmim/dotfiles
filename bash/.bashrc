@@ -98,3 +98,6 @@ export workrepo="sftp:$alienware:/home/nasser/Backup"
 alias workbackup="restic -r $workrepo --verbose backup ~/Experiments"
 
 export homerepo="b2:thinkpad-t14s:Documents"
+
+# alias for apptainer
+alias apptshell="sudo apptainer shell --writable"
