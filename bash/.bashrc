@@ -55,10 +55,10 @@ export PS1="[\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\W]$ "
 
 # For using tramp
 # the promp needs to be simple
-case "$TERM" in
-	"dumb")
-		PS1="> "
-esac
+# case "$TERM" in
+# 	"dumb")
+# 		PS1="> "
+# esac
 
 #
 # Aliases
