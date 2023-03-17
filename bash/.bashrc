@@ -38,6 +38,13 @@ vterm_printf(){
         printf "\e]%s\e\\" "$1"
     fi
 }
+# For directory tracking and prompt tracking
+# directory tracking: default directory and current directory in vterm are synced
+# prompt tracking: emacs knows where the prompt ends.
+vterm_prompt_end(){
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+}
+PS1=$PS1'\[$(vterm_prompt_end)\]'
 
 # prompt string
 #\u - user name
