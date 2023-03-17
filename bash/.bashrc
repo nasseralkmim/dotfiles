@@ -27,6 +27,7 @@ export "GOPATH=${HOME}/go"
 export PATH="/usr/local/go/bin:${PATH}:${GOPATH}/bin"
 
 # for vterm (in emacs)
+# add functions to enable the shell to send information to vterm
 vterm_printf(){
     if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
         # Tell tmux to pass the escape sequences through
@@ -38,13 +39,6 @@ vterm_printf(){
         printf "\e]%s\e\\" "$1"
     fi
 }
-# For directory tracking and prompt tracking
-# directory tracking: default directory and current directory in vterm are synced
-# prompt tracking: emacs knows where the prompt ends.
-vterm_prompt_end(){
-    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
-}
-PS1=$PS1'\[$(vterm_prompt_end)\]'
 
 # prompt string
 #\u - user name
@@ -54,11 +48,11 @@ PS1=$PS1'\[$(vterm_prompt_end)\]'
 export PS1="[\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\W]$ "
 
 # For using tramp
-# the promp needs to be simple
-# case "$TERM" in
-# 	"dumb")
-# 		PS1="> "
-# esac
+# the prompt needs to be simple
+case "$TERM" in
+	"dumb")
+		PS1="> "
+esac
 
 #
 # Aliases
@@ -108,3 +102,14 @@ export homerepo="b2:thinkpad-t14s:Documents"
 
 # alias for apptainer
 alias apptshell="sudo apptainer shell --writable"
+
+# For Emacs Vterm prompt track
+# Needs to be at end
+# https://github.com/akermu/emacs-libvterm#:~:text=For%20bash%2C%20put%20this%20at%20the%20end%20of%20your%20.bashrc%3A
+# For directory tracking and prompt tracking
+# directory tracking: default directory and current directory in vterm are synced
+# prompt tracking: emacs knows where the prompt ends.
+vterm_prompt_end(){
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+}
+PS1=$PS1'\[$(vterm_prompt_end)\]'
