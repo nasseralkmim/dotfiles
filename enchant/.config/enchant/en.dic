@@ -223,3 +223,15 @@ GDB
 Stratimikos
 Thyra
 Teko
+xml
+residuals.txt
+Teko.
+strided
+microrotations.
+preconditioner.
+Gauss-Seidel
+ParameterList
+Grammarly.
+Flymake
+Eglot.
+Amesos
