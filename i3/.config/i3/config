@@ -213,3 +213,6 @@ exec_always --no-startup-id xcape -e 'Control_L=Escape'
 
 # lock screen
 bindsym $mod+Shift+x exec i3lock -c 000000
+
+# make keyboard typing snappier
+xset r rate 300 50
