@@ -201,3 +201,12 @@ bar {
 
 # auto start seadrive
 exec --no-startup-id seadrive-gui
+
+# For tablet map to HDMI-A-0 screen
+# info: https://wiki.archlinux.org/title/Graphics_tablet
+# script: https://gist.github.com/tom-galvin/6c19fe907945d735c045
+exec_always --no-startup-id ~/.local/src/scripts/mapwacom.sh --device-regex='Wacom.*' --screen='HDMI-A-0'
+
+# Keyboard settings
+exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:alt_shift_toggle' -option ctrl:nocaps 
+exec_always --no-startup-id xcape -e 'Control_L=Escape'
