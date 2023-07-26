@@ -66,7 +66,7 @@ alias pvpython="'/mnt/c/Program Files/ParaView 5.9.1-Windows-Python3.8-msvc2017-
 # emacs
 # -nw no window, open on current terminal
 # -a '' if there is no client
-alias e="emacs -nw -fg white -bg black"
+alias e="emacs -nw"
 alias ec="emacsclient --no-wait"
 
 # better color support (-256color)
