@@ -98,7 +98,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+m fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -106,10 +106,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+f focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -204,7 +204,7 @@ exec --no-startup-id seadrive-gui
 exec_always --no-startup-id ~/.local/src/scripts/mapwacom.sh --device-regex='Wacom.*' --screen='HDMI-A-0'
 
 # Keyboard settings
-exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:alt_shift_toggle' -option ctrl:nocaps 
+exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:win_space_toggle' -option ctrl:nocaps 
 exec_always --no-startup-id xcape -e 'Control_L=Escape'
 
 # lock screen
