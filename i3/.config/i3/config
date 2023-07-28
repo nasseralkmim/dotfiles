@@ -211,7 +211,12 @@ exec_always --no-startup-id xcape -e 'Control_L=Escape'
 bindsym $mod+Shift+x exec i3lock -c 000000
 
 # make keyboard typing snappier
-exec_always --no-startup-id xset r rate 300 50
+# press and hold, after initial delay the key repeats at a fixed rate
+# delay: "typematic delay"
+# rate: "typematic rate"
+# xset r rate <delay ms> <rate hertz=repetitions/second>
+# default is 660ms and 25Hz
+exec_always --no-startup-id xset r rate 350 50
 
 # redshift modes
 bindsym $mod+Shift+s mode "$mode_redshift"
