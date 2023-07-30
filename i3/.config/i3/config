@@ -234,3 +234,7 @@ mode "$mode_redshift" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
+# auto detected external screen layout
+# configure with the GUI program 'anandr' and autodetect with 'autorandr'
+exec_always --no-startup-id autorandr --change
