@@ -216,7 +216,7 @@ bindsym $mod+Shift+x exec i3lock -c 000000
 # rate: "typematic rate"
 # xset r rate <delay ms> <rate hertz=repetitions/second>
 # default is 660ms and 25Hz
-# exec_always --no-startup-id xset r rate 350 50
+exec_always --no-startup-id xset r rate 450 50
 
 # redshift modes
 bindsym $mod+Shift+s mode "$mode_redshift"
@@ -238,3 +238,7 @@ mode "$mode_redshift" {
 # auto detected external screen layout
 # configure with the GUI program 'anandr' and autodetect with 'autorandr'
 exec_always --no-startup-id autorandr --change
+
+# For controling screen brightness with the keyboard key
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
