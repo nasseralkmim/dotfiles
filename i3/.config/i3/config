@@ -198,10 +198,28 @@ bar {
 # auto start seadrive
 exec --no-startup-id seadrive-gui
 
-# For tablet map to HDMI-A-0 screen
-# info: https://wiki.archlinux.org/title/Graphics_tablet
-# script: https://gist.github.com/tom-galvin/6c19fe907945d735c045
-exec_always --no-startup-id ~/.local/src/scripts/mapwacom.sh --device-regex='Wacom.*' --screen='HDMI-A-0'
+# For tablet map to active screen
+# Save this script in a file:
+# #!/bin/bash
+
+# # get the current cursor location
+# eval $(xdotool getmouselocation --shell)
+
+# # determine which monitor the cursor is on
+# # monitor name is determined by 'xrandr --listactivemonitors' and the size 1920 is the monitor size 
+# # This works for monitors side by side...
+# if (( X < 1920 )); then
+#     MONITOR="DisplayPort-0"
+# else
+#     MONITOR="HDMI-A-0"
+# fi
+
+# # get the stylus ID, the tablet must be plugged in
+# STYLUSID=$(xsetwacom --list | awk '/stylus/ {print $(NF - 2)}')
+
+# # map the tablet to the current monitor
+# xsetwacom --set $STYLUSID MapToOutput $MONITOR
+bindsym $mod+Shift+t exec --no-startup-id ~/.local/src/scripts/mapwacom_active.sh
 
 # Keyboard settings
 exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:win_space_toggle' -option ctrl:nocaps 
