@@ -234,7 +234,7 @@ bindsym $mod+Shift+x exec i3lock -c 000000
 # rate: "typematic rate"
 # xset r rate <delay ms> <rate hertz=repetitions/second>
 # default is 660ms and 25Hz
-exec_always --no-startup-id xset r rate 220 60
+exec_always --no-startup-id xset r rate 250 90
 
 # redshift modes
 bindsym $mod+Shift+s mode "$mode_redshift"
