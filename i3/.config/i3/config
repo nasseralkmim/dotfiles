@@ -204,7 +204,7 @@ bar {
 exec --no-startup-id seadrive-gui
 
 # For tablet map to active screen
-# Save this script in a file:
+# Save this script in a file, and give permission to execute:
 # #!/bin/bash
 
 # # get the current cursor location
@@ -213,8 +213,11 @@ exec --no-startup-id seadrive-gui
 # # determine which monitor the cursor is on
 # # monitor name is determined by 'xrandr --listactivemonitors' and the size 1920 is the monitor size 
 # # This works for monitors side by side...
-# if (( X < 1920 )); then
+# if (( X < 1920 ) && (Y > 1080)); then
 #     MONITOR="DisplayPort-0"
+# elif (Y < 1080); then
+#     # laptop on bottom
+#     MONITOR="eDP"
 # else
 #     MONITOR="HDMI-A-0"
 # fi
