@@ -270,3 +270,7 @@ exec_always --no-startup-id autorandr --change
 # For controling screen brightness with the keyboard key
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
+# set background, so we overwrite what the display manager has (login page)
+exec --no-startup-id xsetroot -cursor_name left_ptr -solid "#000000"
+
