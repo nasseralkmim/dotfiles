@@ -231,7 +231,9 @@ bindsym $mod+Shift+t exec --no-startup-id ~/.local/src/scripts/mapwacom_active.s
 
 # Keyboard settings
 exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:win_space_toggle' -option ctrl:nocaps 
-exec_always --no-startup-id xcape -e 'Control_L=Escape'
+# https://askubuntu.com/a/1315923
+# "-t 175": if hold key longer than 175, key event will not be generated
+exec_always --no-startup-id xcape -e 'Control_L=Escape' -t 175
 
 # lock screen
 bindsym $mod+Shift+x exec i3lock -c 000000
