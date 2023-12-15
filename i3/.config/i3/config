@@ -228,6 +228,7 @@ exec --no-startup-id seadrive-gui
 # # map the tablet to the current monitor
 # xsetwacom --set $STYLUSID MapToOutput $MONITOR
 bindsym $mod+Shift+t exec --no-startup-id ~/.local/src/scripts/mapwacom_active.sh
+bindsym $mod+Shift+o exec --no-startup-id xsetwacom --set $(xsetwacom --list | awk '/stylus/ {print $(NF - 2)}') Rotate Half
 
 # Keyboard settings
 exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:win_space_toggle' -option ctrl:nocaps
