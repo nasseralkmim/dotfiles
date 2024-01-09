@@ -281,3 +281,7 @@ debugpy
 mpFEM's
 eigenmode
 Frobenius
+muelu
+amg
+bamg
+geomechanics

@@ -278,3 +278,5 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 # set background, so we overwrite what the display manager has (login page)
 exec --no-startup-id xsetroot -cursor_name left_ptr -solid "#000000"
 
+# Add picom to highilght current window
+exec --no-startup-id picom -CGb
