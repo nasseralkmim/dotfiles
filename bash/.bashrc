@@ -90,7 +90,7 @@ alias grep='grep --color=auto'
 
 # for remote work
 alias uibk='sudo openconnect vpn.uibk.ac.at -u c8441205 -b'
-alias fw='google-chrome-unstable https://fwauth-tech.uibk.ac.at/'
+alias fw='google-chrome-stable https://fwauth-tech.uibk.ac.at/'
 export workstation=nasser@138.232.83.174
 export alienware=nasser@138.232.83.149
 export threadripper=nasser@138.232.83.171
