@@ -285,3 +285,6 @@ muelu
 amg
 bamg
 geomechanics
+Cosserat
+dape
+pyvista
