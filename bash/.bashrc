@@ -73,6 +73,7 @@ alias ec="emacsclient --no-wait"
 # 'screen-256color' is ok and supported by most hosts by default
 # 'xterm-direct' is also good
 export TERM=xterm-24bits
+export COLORTERM=truecolor
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 export PATH=$JAVA_HOME/jre/bin:$PATH
