@@ -198,6 +198,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command ~/.config/i3status/i3status.sh
+        # add primary with xrandr --output HDMI-A-0 --primary
+        tray_output primary
 }
 
 # auto start seadrive
