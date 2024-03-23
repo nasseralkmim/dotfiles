@@ -282,3 +282,9 @@ exec --no-startup-id xsetroot -cursor_name left_ptr -solid "#000000"
 
 # Add picom to highilght current window
 exec --no-startup-id picom -CGb
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
