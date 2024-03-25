@@ -290,3 +290,8 @@ dape
 pyvista
 block-preconditioner
 SA-AMG
+Krylov-subspace
+Newton-Raphson
+block-preconditioners
+hydromechanical
+microcracks
