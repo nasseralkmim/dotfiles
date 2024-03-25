@@ -202,8 +202,9 @@ bar {
         tray_output primary
 }
 
-# auto start seadrive
+# auto start seadrive and syncthing
 exec --no-startup-id seadrive-gui
+exec --no-startup-id syncthing
 
 # For tablet map to active screen
 # Save this script in a file, and give permission to execute:
