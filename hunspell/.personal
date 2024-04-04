@@ -295,3 +295,7 @@ Newton-Raphson
 block-preconditioners
 hydromechanical
 microcracks
+poroelasticity
+Biot
+undrained
+Terzaghi
