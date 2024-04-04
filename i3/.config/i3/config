@@ -202,7 +202,7 @@ bar {
         tray_output primary
 }
 
-# auto start seadrive and syncthing
+# auto start seadrive and syncthing (systemd starts syncthing, and here explicitly start the tray)
 # exec --no-startup-id seadrive-gui
 exec --no-startup-id syncthingtray
 
