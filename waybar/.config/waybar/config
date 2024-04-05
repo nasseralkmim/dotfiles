@@ -22,8 +22,8 @@
         "bluetooth",
         "network",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
+        // "cpu",
+        // "memory",
         "temperature",
         "backlight",
         "keyboard-state",
@@ -210,7 +210,7 @@
             "car": "",
             "default": ["", " ", " "]
         },
-        "on-click": "pavucontrol"
+        "on-ick": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {}",
