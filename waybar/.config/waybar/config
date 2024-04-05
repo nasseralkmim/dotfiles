@@ -16,18 +16,18 @@
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
+        // "mpd",
+        // "idle_inhibitor",
+        "hyprland/language",
         "pulseaudio",
         "bluetooth",
-        "network",
+        // "network",
         "power-profiles-daemon",
         // "cpu",
         // "memory",
-        "temperature",
+        // "temperature",
         "backlight",
         "keyboard-state",
-        "hyprland/language",
         "battery",
         "battery#bat2",
         "custom/weather",
@@ -53,6 +53,9 @@
      },
     "hyprland/language":{
         "format": "{short}",
+    },
+    "hyprland/window":{
+        "max-length": 30,
     },
     "keyboard-state": {
         "numlock": true,
@@ -107,8 +110,8 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10
+        "icon-size": 10,
+        "spacing": 4
     },
     "clock": {
         "format": "{:%H:%M %A, %B %d, %Y}  ",
@@ -237,7 +240,7 @@
         "format": "{} °",
         "tooltip": true,
         "interval": 3600,
-        "exec": "wttrbar",
+        "exec": "wttrbar --location innsbruck",
         "return-type": "json"
     },
 }
