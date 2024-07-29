@@ -8,7 +8,7 @@
 
 general {
         colors = true
-        interval = l
+        interval = 5
 }
 
 # order += "ipv6"

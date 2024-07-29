@@ -235,7 +235,9 @@ bindsym $mod+Shift+t exec --no-startup-id ~/.local/src/scripts/mapwacom_active.s
 bindsym $mod+Shift+o exec --no-startup-id xsetwacom --set $(xsetwacom --list | awk '/stylus/ {print $(NF - 2)}') Rotate Half
 
 # Keyboard settings
-exec_always --no-startup-id setxkbmap -layout us,de,br -option 'grp:win_space_toggle'
+# need to install xkb-switch (https://lambda-files.crocodile.org/2019/02/keyboard-layout-indicator-for-i3-with.html)
+exec_always --no-startup-id setxkbmap -layout us,de,br
+bindsym $mod+space exec "xkb-switch -n; pkill -x --signal=SIGUSR1 i3status"
 # https://askubuntu.com/a/1315923
 # "-t 175": if hold key longer than 175, key event will not be generated
 # exec-always --no-startup-id xcape -e 'Control_L=Escape' -t 175
