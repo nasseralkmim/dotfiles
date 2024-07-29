@@ -21,9 +21,10 @@ set $term alacritty
 # font pango:Recursive Mono Linear Static 9
 font MesloLGS Nerd Font Mono 11
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# 
+# Scaling
+# 
+output eDP-1 scale 1.2
 
 ### Idle configuration
 #
@@ -37,7 +38,6 @@ exec swayidle -w \
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
 
 ### Key bindings
 #
