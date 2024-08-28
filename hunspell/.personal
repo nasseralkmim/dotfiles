@@ -326,3 +326,5 @@ variogram
 univariate
 hardware-hyperthreading
 teko
+unpreconditioned
+threadripper
