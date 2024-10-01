@@ -1,0 +1,17 @@
+import = [
+    "~/.config/alacritty/themes/themes/github_light.toml"
+]
+
+[font]
+size = 9
+
+[font.normal]
+# family = "JetBrains Mono NF"
+# family = "MesloLGS Nerd Font Mono"
+# family = "Iosevka SS12 Extended"
+# family = "Monaspace Neon"
+family = "Commit Mono"
+
+
+[cursor]
+style = {blinking = "Never"}
