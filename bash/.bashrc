@@ -83,7 +83,7 @@ export SUDO_EDITOR="emacs -nw"
 # &: runs in the background
 # disown: remove from SHELL jobm control (can close terminal)
 # - mesa for hardware acceleration
-alias abaqus="singularity exec ~/Containers/abaqus/abaqus-2019-centos-7-may-2020_ii.simg abaqus"
+alias abaqus="apptainer exec ~/Containers/abaqus/abaqus-2024-EL7-teaching.smg abaqus"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
