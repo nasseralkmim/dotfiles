@@ -329,3 +329,13 @@ teko
 unpreconditioned
 threadripper
 Chebyshevs
+Arnoldi
+hessenberg
+non-hermetian
+superdiagonal
+Gram-Schimidt
+emph
+Trefethen
+tridiagonal
+Lanczos
+nonhermitian
