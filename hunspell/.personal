@@ -339,3 +339,8 @@ Trefethen
 tridiagonal
 Lanczos
 nonhermitian
+Petrov-Galerking
+LanguageTool
+Unsmoothed
+Kokkos
+dealocated
