@@ -347,3 +347,5 @@ dealocated
 P-AMG
 centroidal
 GIDs
+Xpetra-style
+Thyra-style
