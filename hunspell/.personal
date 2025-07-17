@@ -359,3 +359,6 @@ pre-peak
 stratimikos
 P-multigrid
 hp-multigrid
+solvability
+Hookean
+eq

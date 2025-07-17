@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 
 # add ~/.local/bin to path
-export PATH="${PATH}:/home/nasser/.local/bin"
+export PATH="${PATH}:/home/nasser/.local/bin:/home/nasser/.npm/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -73,8 +73,8 @@ alias ec="emacsclient -nw"
 # export TERM=xterm-24bit
 # export COLORTERM=truecolor
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
-export PATH=$JAVA_HOME/jre/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/default
+# export PATH=$JAVA_HOME/jre/bin:$PATH
 
 # editor for sudo -e
 export SUDO_EDITOR="emacs -nw"
