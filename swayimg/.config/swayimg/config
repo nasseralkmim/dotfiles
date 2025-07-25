@@ -19,11 +19,11 @@
 # Mode at startup (viewer/slideshow/gallery)
 mode = viewer
 # Window size (fullscreen/image, or absolute size)
-size = 1280,720
+size = image
 # Sway/Hyprland only: Window position (auto or absolute coordinates, e.g. 10,20)
 position = auto
 # Sway/Hyprland only: create floating window above the currently focused one
-overlay = yes
+overlay = no
 # Use window decoration (yes/no)
 decoration = no
 # Action performed by SIGUSR1 signal (same format as for key bindings)
@@ -40,7 +40,7 @@ app_id = swayimg
 # Window background color (auto/extend/mirror/RGBA)
 window = #00000000
 # Background for transparent images (grid/RGBA)
-transparency = grid
+transparency = #ffffff00
 # Default image scale (optimal/width/height/fit/fill/real/keep)
 scale = optimal
 # Initial image position on the window (center/top/bottom/free/...)
@@ -133,7 +133,7 @@ background = #00000000
 ################################################################################
 [info]
 # Show on startup (yes/no)
-show = yes
+show = no
 # Timeout to hide info (seconds, 0 to always show)
 info_timeout = 5
 # Timeout to hide status message (seconds)
