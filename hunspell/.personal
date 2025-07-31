@@ -362,3 +362,8 @@ hp-multigrid
 solvability
 Hookean
 eq
+irreversibility
+variational
+iteratively
+dimensionally
+equilibration
