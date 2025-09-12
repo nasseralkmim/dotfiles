@@ -16,10 +16,6 @@ else
     fi
 fi
 unset __conda_setup
-
-if [ -f "/home/nasser/miniconda3/etc/profile.d/mamba.sh" ]; then
-    . "/home/nasser/miniconda3/etc/profile.d/mamba.sh"
-fi
 # <<< conda initialize <<<
 
 # go language for singularity
