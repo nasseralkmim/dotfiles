@@ -8,13 +8,13 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({ output = "",         mode = "preferred", position = "auto", scale = 1.6 })
+hl.monitor({ output = "",         mode = "preferred", position = "auto", scale = 1.25 })
 -- Office monitor: left, rotated
-hl.monitor({ output = "DVI-D-1",  mode = "preferred", position = "0x0",  scale = 1.6, transform = 1 })
--- Office monitor: right  (scaled position: 1080 / 1.6 = 675)
-hl.monitor({ output = "HDMI-A-1", mode = "preferred", position = "675x0", scale = 1.6 })
+hl.monitor({ output = "DVI-D-1",  mode = "preferred", position = "0x0",  scale = 1.25, transform = 1 })
+-- Office monitor: right  (scaled position: 1080 / 1.25 = 675)
+hl.monitor({ output = "HDMI-A-1", mode = "preferred", position = "864x0", scale = 1.25 })
 -- Laptop
-hl.monitor({ output = "eDP-1",    mode = "preferred", position = "auto", scale = 1.6 })
+hl.monitor({ output = "eDP-1",    mode = "preferred", position = "auto", scale = 1.25 })
 -- Mirror HDMI to laptop (uncomment to enable):
 -- hl.monitor({ output = "HDMI-A-1", mode = "preferred", position = "auto", scale = 1.6, mirror = "eDP-1" })
 
