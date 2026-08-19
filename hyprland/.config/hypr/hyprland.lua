@@ -40,6 +40,10 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("nm-applet --indicator")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("hypridle")
+
+    -- Cursor theme: must run here, not at file scope. A bare hl.exec_cmd runs
+    -- during config parse, before the IPC socket exists, so hyprctl fails.
+    hl.exec_cmd("hyprctl setcursor macOS 24")
 end)
 
 
@@ -52,13 +56,11 @@ end)
 hl.config({ xwayland = { force_zero_scaling = true } })
 hl.env("GDK_SCALE", "1")
 
--- Cursor theme (set with: hyprctl setcursor macOS 24)
+-- Cursor theme for clients (XWayland/GTK/Qt).
+-- Hyprland's own rendered cursor is set via setcursor in the autostart block.
 hl.env("XCURSOR_THEME", "macOS")
 hl.env("XCURSOR_SIZE",   "24")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-
--- Force cursor to load at startup
-hl.exec_cmd("hyprctl setcursor macOS 24")
 
 -- Avoid black cursor on some monitors
 -- https://github.com/end-4/dots-hyprland/issues/3054
