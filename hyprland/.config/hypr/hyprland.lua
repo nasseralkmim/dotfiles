@@ -14,7 +14,7 @@ hl.monitor({ output = "DVI-D-1",  mode = "preferred", position = "0x0",  scale =
 -- Office monitor: right  (scaled position: 1080 / 1.25 = 675)
 hl.monitor({ output = "HDMI-A-1", mode = "preferred", position = "864x0", scale = 1.25 })
 -- Laptop
-hl.monitor({ output = "eDP-1",    mode = "preferred", position = "auto", scale = 1.25 })
+hl.monitor({ output = "eDP-1",    mode = "preferred", position = "auto", scale = 1.6 })
 -- Mirror HDMI to laptop (uncomment to enable):
 -- hl.monitor({ output = "HDMI-A-1", mode = "preferred", position = "auto", scale = 1.6, mirror = "eDP-1" })
 
