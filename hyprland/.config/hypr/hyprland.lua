@@ -196,7 +196,9 @@ hl.bind(mainMod .. " + P",         hl.dsp.window.pseudo())             -- dwindl
 hl.bind(mainMod .. " + SHIFT + J", hl.dsp.layout("togglesplit"))       -- dwindle
 hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen(0))
-hl.bind(mainMod .. " + SHIFT + F", hl.dsp.exec_cmd("hyprctl dispatch fullscreenstate 0 2"))  -- maximize, keep geometry
+hl.bind(mainMod .. " + SHIFT + F",
+  hl.dsp.window.fullscreen_state({ internal = 0, client = 2 })
+)
 
 -- Move focus with mainMod + hjkl
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
